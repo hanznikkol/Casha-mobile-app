@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Casha</string>
+    <string name="welcome">Welcome</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="sign_out">Sign out</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="emailLogin">Email</string>
 </resources>

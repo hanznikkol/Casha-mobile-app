@@ -8,36 +8,47 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome"
+        android:text="@string/welcome"
         android:layout_centerHorizontal="true"
-        android:textSize="34sp"/>
+        android:textSize="34sp"
+        android:layout_marginTop="75sp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Name"
+        android:text="@string/name"
         android:id="@+id/name"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:textSize="34sp"/>
+        android:textSize="25sp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email"
+        android:text="@string/email"
         android:id="@+id/email"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_below="@+id/name"
-        android:textSize="34sp"/>
+        android:textSize="20sp"/>
 
     <Button
+        android:id="@+id/signOutBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign out"
-        android:id="@+id/signOut"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"/>
+        android:layout_marginBottom="107dp"
+        android:text="@string/sign_out" />
+
+    <Button
+        android:id="@+id/deleteAccBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/delete_account"
+        android:layout_marginBottom="50dp"/>
 
 
 </RelativeLayout>

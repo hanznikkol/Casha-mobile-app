@@ -9,6 +9,22 @@
     android:layout_centerVertical="true"
     >
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SignUpActivity"
+        android:background="@drawable/gradiant_offwhite"
+        android:layout_centerVertical="true">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+
+
     <ImageButton
         android:id="@+id/imgBtnBack"
         style="@style/Widget.MaterialComponents.Button"
@@ -116,7 +132,7 @@
             app:startIconDrawable="@drawable/user24">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edUsername"
+                android:id="@+id/edEmailLogin"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/poppins_regular"
