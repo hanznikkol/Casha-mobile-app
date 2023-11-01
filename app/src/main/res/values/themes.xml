@@ -2,6 +2,7 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Casha" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="cursorColor">@color/primary</item>
     </style>
 
     <style name="Theme.Casha" parent="Base.Theme.Casha" />

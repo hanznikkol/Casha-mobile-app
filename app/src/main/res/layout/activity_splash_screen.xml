@@ -27,7 +27,7 @@
             android:id="@+id/cashaSplashAnimate"
             android:layout_width="180dp"
             android:layout_height="120dp"
-            app:lottie_rawRes="@raw/casha_animate"
+            app:lottie_rawRes="@raw/casha_animate2"
             />
 
 
