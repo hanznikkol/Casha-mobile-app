@@ -22,7 +22,9 @@
         android:src="@drawable/back24"
         app:backgroundTint="@null"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/backbutton"
+        />
 
     <LinearLayout
         android:layout_marginTop="15dp"
@@ -68,7 +70,7 @@
             app:helperText="e.g. Juan Dela Cruz"
             app:helperTextTextColor="@color/tertiary_blue"
             app:hintTextColor="@color/tertiary_blue"
-            app:startIconDrawable="@drawable/user24">
+            app:startIconDrawable="@drawable/name24">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edFullName"

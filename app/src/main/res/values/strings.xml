@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Casha</string>
+    <string name="backbutton">backButton</string>
 </resources>

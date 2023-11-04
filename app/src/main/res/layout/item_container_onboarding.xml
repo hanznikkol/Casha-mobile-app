@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="30dp"
+    android:gravity="center"
+    android:layout_marginBottom="50dp"
+    android:padding="20dp"
+    >
+    <ImageView
+        android:id="@+id/imageOnboarding"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:adjustViewBounds="true"
+        android:layout_margin="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tvTitleOnboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="Lorem ipsum dolor sit amet"
+        android:textColor="@color/primary"
+        android:fontFamily="@font/poppins_bold"
+        />
+
+    <TextView
+        android:id="@+id/tvDescOnboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        android:textColor="@color/gray_dark"
+        android:fontFamily="@font/poppins_regular"
+        />
+</LinearLayout>

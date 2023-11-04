@@ -10,6 +10,7 @@
     <color name="primary">#74A520</color>
     <color name="primary_second">#88B934</color>
     <color name="primary_third">#9CCD48</color>
+    <color name="primary_pale">#b9d28f</color>
     <color name="contrast_blue">#2D7A9B</color>
     <color name="secondary_blue">#3288AD</color>
     <color name="tertiary_blue">#57ADC1</color>
