@@ -2,48 +2,30 @@ package com.example.casha;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.gms.auth.api.signin.GoogleSignIn;
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
-import com.google.android.gms.auth.api.signin.GoogleSignInClient;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+
 
 public class WelcomeActivity extends AppCompatActivity {
-    GoogleSignInOptions gso;
-    GoogleSignInClient gsc;
-    TextView name, email;
-    Button signOutBtn;
+
+    Button getStartBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
+        getStartBtn = findViewById(R.id.getStartBtn);
 
-        name = findViewById(R.id.name);
-        email = findViewById(R.id.email);
-        signOutBtn = findViewById(R.id.signOut);
-
-        gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
-        gsc = GoogleSignIn.getClient(this,gso);
-
-        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
-        if(acct != null){
-            String personName = acct.getDisplayName();
-            String personEmail = acct.getEmail();
-            name.setText(personName);
-            email.setText(personEmail);
-        }
-
-        signOutBtn.setOnClickListener(v -> signOut());
-    }
-
-    void signOut(){
-        gsc.signOut().addOnCompleteListener(task -> {
-            finish();
-            startActivity(new Intent(WelcomeActivity.this, LoginActivity.class));
+        getStartBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(WelcomeActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
         });
     }
+
 }

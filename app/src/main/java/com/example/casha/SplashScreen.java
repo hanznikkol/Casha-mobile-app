@@ -9,22 +9,19 @@ import android.os.Handler;
 
 public class SplashScreen extends AppCompatActivity {
 
-    LottieAnimationView lottieAnimationViewLogo, lottieAnimationViewCasha;
+    LottieAnimationView lottieLogo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        lottieAnimationViewLogo = findViewById(R.id.logoSplashAnimate);
-        lottieAnimationViewCasha = findViewById(R.id.cashaSplashAnimate);
 
-        lottieAnimationViewLogo.playAnimation();
-        lottieAnimationViewCasha.playAnimation();
-
+        lottieLogo = findViewById(R.id.lottieLogo);
+        lottieLogo.animate();
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashScreen.this, OnboardingScreen.class);
+                Intent intent = new Intent(SplashScreen.this, WelcomeActivity.class);
                 startActivity(intent);
                 finish();
             }

@@ -6,35 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".SplashScreen"
     android:gravity="center"
+    android:layout_gravity="center"
     >
 
-    <LinearLayout
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieLogo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="10dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/logoSplashAnimate"
-            android:layout_width="140dp"
-            android:layout_height="150dp"
-            android:layout_marginEnd="10dp"
-            app:lottie_rawRes="@raw/logo_animate" />
-
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/cashaSplashAnimate"
-            android:layout_width="180dp"
-            android:layout_height="120dp"
-            app:lottie_rawRes="@raw/casha_animate2" />
-
-
-    </LinearLayout>
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/casha_lottie" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

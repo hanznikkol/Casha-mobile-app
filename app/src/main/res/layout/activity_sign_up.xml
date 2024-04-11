@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignUpActivity"
-    android:background="@drawable/gradiant_offwhite"
     android:layout_centerVertical="true"
     >
 
@@ -19,11 +18,10 @@
         android:layout_marginStart="20dp"
         android:background="@drawable/back_btn_bg"
         android:padding="5dp"
-        android:src="@drawable/back24"
-        app:backgroundTint="@null"
+        android:src="@drawable/arrow_back"
+        app:backgroundTint="@color/gray_light"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/backbutton"
         />
 
     <LinearLayout
@@ -47,209 +45,8 @@
             android:textSize="24sp" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/layoutSignUpText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/layoutHeader"
-        android:layout_marginHorizontal="15dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/layoutSignUpButtons"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layoutHeader">
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Fullname*"
-            android:padding="10dp"
-            app:boxStrokeColor="@color/contrast_blue"
-            app:cursorColor="@color/secondary_blue"
-            app:helperText="e.g. Juan Dela Cruz"
-            app:helperTextTextColor="@color/tertiary_blue"
-            app:hintTextColor="@color/tertiary_blue"
-            app:startIconDrawable="@drawable/name24">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edFullName"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/poppins_regular"
-                android:inputType="text"
-                android:textSize="14sp"
-                app:hintTextColor="@color/tertiary_blue" />
-        </com.google.android.material.textfield.TextInputLayout>
 
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Email*"
-            android:padding="10dp"
-            app:boxStrokeColor="@color/contrast_blue"
-            app:cursorColor="@color/secondary_blue"
-            app:hintTextColor="@color/tertiary_blue"
-            app:startIconDrawable="@drawable/email24">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edEmail"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/poppins_regular"
-                android:inputType="textEmailAddress"
-                android:textSize="14sp"
-                app:hintTextColor="@color/tertiary_blue" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Username*"
-            android:padding="10dp"
-            app:boxStrokeColor="@color/contrast_blue"
-            app:cursorColor="@color/secondary_blue"
-            app:helperText="e.g. JuanDC123"
-            app:helperTextTextColor="@color/tertiary_blue"
-            app:hintTextColor="@color/tertiary_blue"
-            app:startIconDrawable="@drawable/user24">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edUsername"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/poppins_regular"
-                android:inputType="text"
-                android:textSize="14sp"
-                app:hintTextColor="@color/tertiary_blue" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Password*"
-            android:padding="10dp"
-            app:boxStrokeColor="@color/contrast_blue"
-            app:cursorColor="@color/secondary_blue"
-            app:endIconMode="password_toggle"
-            app:hintTextColor="@color/tertiary_blue"
-            app:startIconDrawable="@drawable/password24">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edPassword"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/poppins_regular"
-                android:inputType="textPassword"
-                android:textSize="14sp"
-                app:hintTextColor="@color/tertiary_blue"
-
-                />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Confirm Password"
-            android:padding="10dp"
-            app:boxStrokeColor="@color/contrast_blue"
-            app:cursorColor="@color/secondary_blue"
-            app:endIconMode="password_toggle"
-            app:hintTextColor="@color/tertiary_blue"
-            app:startIconDrawable="@drawable/password24"
-
-            >
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edConfirmPassword"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/poppins_regular"
-                android:inputType="textPassword"
-                android:textSize="14sp"
-                app:hintTextColor="@color/tertiary_blue" />
-        </com.google.android.material.textfield.TextInputLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/layoutSignUpButtons"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:layout_alignParentBottom="true"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/registerBtn"
-            style="@style/Widget.MaterialComponents.Button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="30dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="20dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:padding="10dp"
-            android:text="Register"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            app:backgroundTint="@color/primary_second" />
-
-        <LinearLayout
-            android:id="@+id/layoutDivider"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/registerBtn"
-            android:layout_marginHorizontal="35dp"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:layout_weight="1"
-                android:background="@color/gray_light" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:fontFamily="@font/poppins_medium"
-                android:text="OR" />
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:layout_weight="1"
-                android:background="@color/gray_light" />
-        </LinearLayout>
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/googleSignUpButton"
-            style="@style/Widget.MaterialComponents.Button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/layoutDivider"
-            android:layout_marginHorizontal="30dp"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:padding="10dp"
-            android:text="Sign up with Google"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            app:backgroundTint="@color/white"
-            app:icon="@drawable/google"
-            app:iconTint="@null" />
-    </LinearLayout>
 
 
 
